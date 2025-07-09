@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Awais Trader - QUOTEX Bot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Awais Trader</h1>
+    <div class="logo-box">
+      <img src="https://i.imgur.com/UVO8o5k.png" alt="Awais Trader Logo" class="logo" />
+    </div>
+
+    <select id="platform">
+      <option selected>QUOTEX</option>
+    </select>
+
+    <select id="pair">
+      <option>AUD/CHF (OTC)</option>
+      <option>AUD/JPY (OTC)</option>
+      <option>AUD/NZD (OTC)</option>
+      <option>AUD/USD (OTC)</option>
+      <option>BTC/USD (OTC)</option>
+      <option>CHF/JPY (OTC)</option>
+      <option>DOGE/USD (OTC)</option>
+      <option>ETH/USD (OTC)</option>
+      <option>EUR/AUD (OTC)</option>
+      <option>EUR/CHF (OTC)</option>
+      <option>EUR/GBP (OTC)</option>
+      <option>EUR/JPY (OTC)</option>
+      <option>EUR/USD (OTC)</option>
+      <option>GBP/JPY (OTC)</option>
+      <option>GBP/USD (OTC)</option>
+      <option>LTC/USD (OTC)</option>
+      <option>NZD/USD (OTC)</option>
+      <option>USD/BRL (OTC)</option>
+      <option>USD/CAD (OTC)</option>
+      <option>USD/CHF (OTC)</option>
+      <option>USD/JPY (OTC)</option>
+      <option>USD/NOK (OTC)</option>
+      <option>USD/TRY (OTC)</option>
+      <option>USD/ZAR (OTC)</option>
+      <option>XRP/USD (OTC)</option>
+    </select>
+
+    <select id="timeframe">
+      <option>5s</option>
+      <option>15s</option>
+      <option>30s</option>
+      <option>1m</option>
+      <option>2m</option>
+      <option>3m</option>
+      <option>5m</option>
+      <option>10m</option>
+      <option>15m</option>
+      <option>30m</option>
+      <option>1hr</option>
+    </select>
+
+    <button id="getSignalBtn" onclick="getSignal()">GET SIGNAL</button>
+
+    <div class="loading" id="loading">
+      <img src="https://i.imgur.com/llF5iyg.gif" alt="Loading..."/>
+      <span id="countdown">WAITING FOR SIGNAL...</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
